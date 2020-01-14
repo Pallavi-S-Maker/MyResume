@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>canvas</title>
+ </head>
+ <body bgcolor="pink">
+<hr>
+<h1><b><marquee>Welcome to NMAMIT Nitte..,</marquee><h1>
+<hr> 
+<center>
+<canvas id="myc" height=330px width=330px style="border:1px solid red">
+</canvas>
+<script>
+var c=document.getElementById("myc");
+var ctx=c.getContext("2d");
+
+ctx.beginPath();
+ctx.arc(150,150,100,0,2*Math.PI);
+ctx.strokeStyle="red";
+ctx.lineWidth=4;
+ctx.stroke();
+
+ctx.font="150px Arial";
+ctx.fillText("P",110,200);
+
+ctx.font="50px Arial";
+ctx.fillText("NO",120,40);
+
+ctx.font="50px Arial";
+ctx.fillText("PARKING",60,300);
+
+ctx.moveTo(80,80);
+ctx.lineTo(220,220);
+ctx.stroke();
+
+</script>
+<hr>
+<hr>
+</body>
+</html>
